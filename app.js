@@ -12,7 +12,7 @@ var app = express();
 
 
 var basicAuth=require('basic-auth-connect');
-app.use(basicAuth('hoge','hogepass'))
+app.use(basicAuth('hoge','hogepass'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
