@@ -10,10 +10,6 @@ var users = require('./routes/users');
 
 var app = express();
 
-
-var basicAuth = require('basic-auth-connect');
-app.use(basicAuth('hoge', 'hogepass'));
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
